@@ -1,0 +1,35 @@
+
+
+
+
+
+<div class="text-center container">
+
+  <nav class="nav nav-pills nav-fill my-5">
+    <a *ngFor="let c of countryCodes" (click)="changeCode(c.code)" class="nav-item nav-link" href="#">{{c.name}}</a>
+  </nav>
+
+  <nav class="nav nav-pills nav-fill my-5">
+    <a *ngFor="let c of categories" (click)="changeCategory(c)" class="nav-item nav-link" href="#">{{c}}</a>
+  </nav>
+
+
+<div class="test"></div>
+  <div class="row">
+
+
+      <div *ngFor="let n of newsContainer ; let i = index" class="col-md-4">
+        
+        
+        <a (click)='changeRoute(i)'>
+        <img class="img-fluid" src="{{n.urlToImage}}"/>
+        <h4>{{n.title}}</h4>
+        <p>{{n.content}}</p>
+      </a>      
+      </div>
+
+
+      
+    </div>
+  
+</div>

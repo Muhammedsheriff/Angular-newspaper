@@ -1,0 +1,35 @@
+
+<!--
+  <div class="container "> 
+        <form #articleData='ngForm'  (ngSubmit)='test(articleData.value)'>
+
+          <div class="form-group">
+            <label>title :</label>
+            <input class="form-control" name="title" [(ngModel)]='title'/>
+          </div>
+
+          <div class="form-group">
+              <label>description :</label>
+              <textarea class="form-control" name="desc" [(ngModel)]='desc'></textarea>
+            </div>            
+            <div class="form-group">
+                <label>image :</label>
+                <input class="form-control" name="image" [(ngModel)]='image'/>
+              </div>
+              <button type="submit" class="btn btn-info">add article</button>
+
+        </form>
+  </div>
+<div class="container">
+  <div class="row">
+
+    <div *ngFor="let r of newArticles" class="col-md-3">
+        <h2>{{r.title}}</h2>
+        <p>{{r.desc}}</p>
+        
+      </div>
+  </div>
+</div>
+
+
+-->
